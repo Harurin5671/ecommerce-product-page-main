@@ -1,0 +1,25 @@
+@use 'variables';
+@use 'mixins';
+
+.galery{
+    &__image-container{
+        border: 1px solid blue;
+        height: 300px;
+        width: 100%;
+        background-image: url("/ecommerce-product-page-main/images/image-product-1.jpg");
+        background-position-y: -35px;
+        background-size: cover;
+    }
+    &__previous{
+        @include mixins.image-btn(180px, 15px);
+    }
+    &__next{
+        @include mixins.image-btn(180px, 320px);
+    }
+    &__thumnail{
+        display: none;
+        @media(min-width:1115px){
+            display: block;
+        }
+    }
+}
