@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./main.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -17,22 +18,24 @@
 <body>
   <main class="main-container">
     <header class="header">
-      <img src="./images/icon-menu.svg" alt="menu icon"/>
-      <img src="./images/logo.svg" alt="logo"/>
-      <nav class="navbar">
-        <ul class="navbar__items">
-          <li><a class="navbar__link" href="#">Collections</a></li>
-          <li><a class="navbar__link" href="#">Men</a></li>
-          <li><a class="navbar__link" href="#">Women</a></li>
-          <li><a class="navbar__link" href="#">About</a></li>
-          <li><a class="navbar__link" href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header__navigation">
+        <img class="header__menu" src="./images/icon-menu.svg" alt="menu icon"/>
+        <img class="header__logo" src="./images/logo.svg" alt="logo"/>
+        <nav class="navbar">
+          <ul class="navbar__items">
+            <li><a class="navbar__link" href="#">Collections</a></li>
+            <li><a class="navbar__link" href="#">Men</a></li>
+            <li><a class="navbar__link" href="#">Women</a></li>
+            <li><a class="navbar__link" href="#">About</a></li>
+            <li><a class="navbar__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
       <!--inicio modal navbar-->
       <div class="modal-navbar__background">
         <nav class="modal-navbar">
           <img class="modal-navbar__close-icon" src="./images/icon-close.svg" alt=close/>
-          <ul class="navbar__items">
+          <ul class="modal-navbar__items">
             <li><a class="modal-navbar__link" href="#">Collections</a></li>
             <li><a class="modal-navbar__link" href="#">Men</a></li>
             <li><a class="modal-navbar__link" href="#">Women</a></li>
@@ -44,10 +47,10 @@
       <!--final modal navbar-->
       <div class="header__cart-avatar">
         <div class="header__cart">
-          <div class="header__cart-notification">3</div>
+          <div class="header__cart--notification">3</div>
           <img src="./images/icon-cart.svg" alt="cart"/>
         </div>
-        <img src="./images/image-avatar.png" alt="avatar"/>
+        <img class="header__avatar" src="./images/image-avatar.png" alt="avatar"/>
       </div>
     </header>
     <section class="content">
@@ -68,7 +71,7 @@
         <h2 class="details__title">Fall Limited Edition Sneakers</h2>
         <p class="details__desciption">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
         <div class="details__prices">
-          <p class="details__now">$125.00<span class="details__discount">50%</span></p>
+          <p class="details__now">$125.00 <span class="details__discount">50%</span></p>
           <p class="details__before">$250.00</p>
         </div>
         <div class="details__product-quantity">
