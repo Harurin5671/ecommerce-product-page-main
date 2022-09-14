@@ -1,16 +1,26 @@
 @use 'initial';
-@use 'variables';
+@use 'variables' as v;
 @use 'header';
 @use 'navbar';
 @use 'modal-navbar';
 @use 'galery';
+@use 'details';
+@use 'input';
+@use 'modal-cart';
+@use 'modal-galery';
 
 .main-container{
     width: 375px;
-    border: 1px solid black;
     position: relative;
     margin: auto;
     @media (min-width: 1115px){
         width: 1115px;
+    }
+}
+.content{
+    @media(min-width: 1115px){
+        display: flex;
+        padding: 50px 50px;
+        gap: 124px;
     }
 }

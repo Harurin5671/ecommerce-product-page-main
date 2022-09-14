@@ -2,14 +2,14 @@
 @use 'mixins';
 
 .modal-navbar{
-    // display: none;
     &__background{
-        @include mixins.modal-background;
+        // @include mixins.modal-background;
     }
     background-color: variables.$White;
     width: 250px;
     height: 100%;
     padding: 28px 24px;
+    display: none;
     &__items{
         display: flex;
         flex-direction: column;
