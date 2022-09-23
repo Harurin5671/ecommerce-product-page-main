@@ -16,6 +16,25 @@
   </style>
 </head>
 <body>
+  <!--inicio galery modal-->
+  <div class="modal-galery__background">
+    <article class="modal-galery">
+      <div class="modal-galery__close-container">
+        <img class="modal-galery__close" src="./images/icon-close.svg" alt="icon modal close">
+      </div>
+      <div class="modal-galery__image-container">
+        <img class="modal-galery__previous" src="./images/icon-previous.svg" alt="icon modal previus"/>
+        <img class="modal-galery__next" src="./images/icon-next.svg" alt="icon modal next"/>
+      </div>
+      <div class="modal-galery__thumnails">
+        <img id="m1" class="modal-galery__thumnail" src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1"/>
+        <img id="m2" class="modal-galery__thumnail" src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2"/>
+        <img id="m3" class="modal-galery__thumnail" src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3"/>
+        <img id="m4" class="modal-galery__thumnail" src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4"/>
+      </div>
+    </article>
+  </div>
+  <!--final galery modal-->
   <main class="main-container">
     <header class="header">
       <div class="header__navigation">
@@ -47,7 +66,7 @@
       <!--final modal navbar-->
       <div class="header__cart-avatar">
         <div class="header__cart">
-          <div class="header__cart--notification">3</div>
+          <div class="header__cart--notification">0</div>
           <img src="./images/icon-cart.svg" alt="cart"/>
         </div>
         <img class="header__avatar" src="./images/image-avatar.png" alt="avatar"/>
@@ -101,29 +120,12 @@
     </div>
     <!--final cart modal-->
 
-    <!--inicio galery modal-->
-    <div class="modal-galery__background">
-      <article class="modal-galery">
-        <div class="modal-galery__close-container">
-          <img class="modal-galery__close" src="./images/icon-close.svg" alt="icon modal close">
-        </div>
-        <div class="modal-galery__image-container">
-          <img class="modal-galery__previous" src="./images/icon-previous.svg" alt="icon modal previus"/>
-          <img class="modal-galery__next" src="./images/icon-next.svg" alt="icon modal next"/>
-        </div>
-        <div class="modal-galery__thumnails">
-          <img id="m1" class="modal-galery__thumnail" src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1"/>
-          <img id="m2" class="modal-galery__thumnail" src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2"/>
-          <img id="m3" class="modal-galery__thumnail" src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3"/>
-          <img id="m4" class="modal-galery__thumnail" src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4"/>
-        </div>
-      </article>
-    </div>
-    <!--final galery modal-->
+    
   </main>  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Frank Santos</a>.
-  </div>
+  </footer>
+  <script src="./main.js"></script>
 </body>
 </html>

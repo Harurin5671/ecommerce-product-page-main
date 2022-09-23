@@ -116,7 +116,18 @@ body {
   width: 250px;
   height: 100%;
   padding: 28px 24px;
+  display: block;
+}
+.modal-navbar__background {
   display: none;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 125%;
+  z-index: 1;
+  overflow: hidden;
 }
 .modal-navbar__items {
   display: flex;
@@ -199,6 +210,7 @@ body {
 @media (min-width: 1115px) {
   .galery {
     width: 446px;
+    cursor: pointer;
   }
   .galery__image-container {
     background-position-y: 0px;
@@ -391,8 +403,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 125%;
   z-index: 1;
+  overflow: hidden;
   display: none;
   place-content: center;
 }
@@ -483,6 +496,13 @@ body {
     padding: 50px 50px;
     gap: 124px;
   }
+}
+
+.cart-empty {
+  color: hsla(0deg, 0%, 0%, 0.5);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
